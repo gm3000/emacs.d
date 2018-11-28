@@ -29,6 +29,8 @@
 ;; Bootstrap config
 ;;----------------------------------------------------------------------------
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
+(setq package-archives '(("gnu"   . "https://elpa.emacs-china.org/gnu/")
+                           ("melpa" . "https://elpa.emacs-china.org/melpa/")))
 (require 'init-utils)
 (require 'init-site-lisp) ;; Must come before elpa, as it may provide package.el
 ;; Calls (package-initialize)
